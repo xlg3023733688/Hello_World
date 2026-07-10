@@ -5,6 +5,7 @@ using namespace std;
 void sort(int* arr,int size)
 {
     int tmp=0;
+    bool flag=false;
     for(int i = 1;i<size;i++)
     {
         for(int j = 1;j<=size-i;j++)
@@ -14,8 +15,10 @@ void sort(int* arr,int size)
                 tmp=arr[j-1];
                 arr[j-1]=arr[j];
                 arr[j]=tmp;
+                flag=true;
             }
         }
+        if(!flag) break;
     }
     for(int i = 0;i<size;i++) cout<<arr[i]<<" ";
     cout<<endl;
