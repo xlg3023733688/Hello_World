@@ -9,7 +9,8 @@ void sort(int* arr,int size)
     {
         for(int j = 1;j<=size-i;j++)
         {
-            if(arr[j-1]>arr[j])
+            //电脑修改从大到小排序
+            if(arr[j-1]<arr[j])
             {
                 tmp=arr[j-1];
                 arr[j-1]=arr[j];
