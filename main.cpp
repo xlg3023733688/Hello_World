@@ -24,5 +24,6 @@ int main()
 {
     int arr[]={1,5,2,9,11,2321,6};
     sort(arr,7);
+    cout<<"我改了"<<endl;
     return 0;
 }
