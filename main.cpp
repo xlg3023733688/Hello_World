@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+//已修
 void sort(int* arr,int size)
 {
     int tmp=0;
