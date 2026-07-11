@@ -1,26 +1,11 @@
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
 //已修
 void sort(int* arr,int size)
 {
-    int tmp=0;
-    bool flag=false;
-    for(int i = 1;i<size;i++)
-    {
-        for(int j = 1;j<=size-i;j++)
-        {
-            //电脑修改从大到小排序
-            if(arr[j-1]<arr[j])
-            {
-                tmp=arr[j-1];
-                arr[j-1]=arr[j];
-                arr[j]=tmp;
-                flag=true;
-            }
-        }
-        if(!flag) break;
-    }
+    std::sort(arr,arr+size);
     for(int i = 0;i<size;i++) cout<<arr[i]<<" ";
     cout<<endl;
 }
